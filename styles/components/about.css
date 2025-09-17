@@ -1,0 +1,163 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__title {
+  font-size: var(--size-2xl);
+  font-family: var(--font-family-heading);
+  color: var(--color-heading);
+}
+
+.about__description {
+  max-width: 60ch;
+  font-size: var(--size-sm);
+  color: var(--color-text);
+}
+
+.about__img {
+  width: 100%;
+}
+
+.about__technologies {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__technologies-title {
+  font-size: var(--size-sm);
+  font-family: var(--font-family-heading);
+  color: var(--color-heading);
+  margin-bottom: 1em;
+}
+
+.about__technologies-content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em 1em;
+}
+
+.about__technologies-content img {
+  width: 6rem;
+  height: 6rem;
+  padding: 1em 1em;
+}
+
+.about__technologies-content figcaption {
+  text-align: center;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .about {
+    gap: 1.5rem;
+  }
+
+  .about__content {
+    gap: 1.5rem;
+  }
+
+  .about__title {
+    font-size: var(--size-3xl);
+  }
+
+  .about__description {
+    font-size: var(--size-base);
+  }
+
+  .about__img-wrapper {
+    width: 28.6875rem;
+  }
+
+  .about__technologies-title {
+    font-size: var(--size-base);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .about {
+    align-items: center;
+  }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "content img"
+      "technologies technologies";
+    column-gap: 3em;
+  }
+
+  .about__content {
+    grid-area: content;
+  }
+
+  .about__img-wrapper {
+    width: 25.95625rem;
+    grid-area: img;
+    margin: 0 auto;
+  }
+
+  .about__technologies {
+    grid-area: technologies;
+  }
+
+  .about__title {
+    font-size: var(--size-4xl);
+  }
+
+  .about__description {
+    font-size: var(--size-lg);
+  }
+
+  .about__technologies-title {
+    font-size: var(--size-lg);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .about__content {
+    gap: 2rem;
+  }
+
+  .about__title {
+    font-size: var(--size-5xl);
+  }
+
+  .about__description {
+    font-size: var(--size-xl);
+  }
+
+  .about__img-wrapper {
+    width: 30.75rem;
+  }
+
+  .about__technologies-title {
+    font-size: var(--size-xl);
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
