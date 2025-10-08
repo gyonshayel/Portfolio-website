@@ -7,6 +7,7 @@ const mobileNav = () => {
   let isMobileNavOpen = false;
 
   headerBtn.addEventListener("click", () => {
+    headerBtn.classList.toggle("active");
     isMobileNavOpen = !isMobileNavOpen;
 
     if (isMobileNavOpen) {
@@ -21,6 +22,7 @@ const mobileNav = () => {
   mobileLinks.forEach((link) => {
     link.addEventListener("click", () => {
       isMobileNavOpen = false;
+      headerBtn.classList.remove("active");
       mobileNav.style.display = "none";
       document.body.style.overflowY = "auto";
     });

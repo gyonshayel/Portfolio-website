@@ -31,10 +31,35 @@ header {
 }
 
 .header__bars {
-  display: block;
-  color: var(--color-general);
-  height: var(--size-2xl);
-  width: var(--size-2xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.header__bars span {
+  width: 25px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-general);
+  transition: all 0.3s ease;
+}
+
+/* Hamburger menu active */
+.header__bars.active span:nth-child(1) {
+  transform-origin: right;
+  transform: rotate(-45deg) translate(-2px, -3.1px);
+}
+
+.header__bars.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__bars.active span:nth-child(3) {
+  transform-origin: right;
+  transform: rotate(45deg) translate(-2px, 3.5px);
 }
 
 /* xs */
