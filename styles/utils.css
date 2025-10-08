@@ -42,6 +42,13 @@
   padding-right: 0.5rem;
 }
 
+/* .header-footer {
+  width: 100vw;
+  background-color: var(
+    --color-top
+  ); use js to add whatever background color of header to this 
+} */
+
 .section {
   margin-top: 5rem;
 }

@@ -1,3 +1,9 @@
+header {
+  background-color: var(
+    --color-top
+  ); /* use js to add whatever background color of header content to this */
+}
+
 .header {
   display: flex;
   justify-content: flex-end;
