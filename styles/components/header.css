@@ -33,15 +33,13 @@ header {
 .header__bars {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 5px;
-  margin-left: auto;
+  row-gap: 2px;
+  position: relative;
   cursor: pointer;
 }
 .header__bars span {
-  width: 25px;
-  height: 3px;
+  width: 14px;
+  height: 2px;
   border-radius: 2px;
   background: var(--color-general);
   transition: all 0.3s ease;
@@ -49,8 +47,8 @@ header {
 
 /* Hamburger menu active */
 .header__bars.active span:nth-child(1) {
-  transform-origin: right;
-  transform: rotate(-45deg) translate(-2px, -3.1px);
+  transform-origin: right center;
+  transform: rotate(-45deg) translate(-1px, -2.25px);
 }
 
 .header__bars.active span:nth-child(2) {
@@ -58,8 +56,8 @@ header {
 }
 
 .header__bars.active span:nth-child(3) {
-  transform-origin: right;
-  transform: rotate(45deg) translate(-2px, 3.5px);
+  transform-origin: right center;
+  transform: rotate(45deg) translate(-0.75px, 2.125px);
 }
 
 /* xs */
@@ -83,6 +81,15 @@ header {
 
   .header__logo {
     font-size: 2rem;
+  }
+
+  .header__bars {
+    gap: 5px;
+  }
+
+  .header__bars span {
+    width: 25px;
+    height: 3px;
   }
 }
 
