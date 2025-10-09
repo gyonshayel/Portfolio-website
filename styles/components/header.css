@@ -1,7 +1,5 @@
 header {
-  background-color: var(
-    --color-nav-bg
-  ); /* use js to add whatever background color of header content to this */
+  background-color: var(--color-nav-bg);
 }
 
 .header__content {
@@ -10,6 +8,8 @@ header {
   align-items: center;
   padding-top: 0.55rem;
   padding-bottom: 0.55rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 0 0 10px 10px;
   position: relative;
   z-index: 9999;
@@ -19,8 +19,11 @@ header {
   display: none;
 }
 
-.header__logo {
+.header-logo {
   flex-grow: 1;
+}
+
+.header-logo__link {
   font-family: var(--font-family-heading);
   font-size: 1.5rem;
   font-weight: bold;
@@ -30,18 +33,21 @@ header {
 }
 
 .header__bars {
+  height: calc(var(--header-height) - 1.1rem);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   row-gap: 2px;
   position: relative;
   cursor: pointer;
+  position: relative;
 }
 .header__bars span {
   width: 14px;
   height: 2px;
   border-radius: 2px;
-  background: var(--color-white);
   transition: all 0.3s ease;
+  background-color: var(--color-nav-item);
 }
 
 /* Hamburger menu active */
@@ -66,8 +72,12 @@ header {
     padding-bottom: 0.425rem;
   }
 
-  .header__logo {
+  .header-logo__link {
     font-size: 1.75rem;
+  }
+
+  .header__bars {
+    height: calc(var(--header-height) - 0.85rem);
   }
 }
 
@@ -78,11 +88,12 @@ header {
     padding-bottom: 0.3rem;
   }
 
-  .header__logo {
+  .header-logo__link {
     font-size: 2rem;
   }
 
   .header__bars {
+    height: calc(var(--header-height) - 0.6rem);
     gap: 5px;
   }
 
@@ -103,7 +114,7 @@ header {
     z-index: 9999;
   }
 
-  .header__logo {
+  .header-logo {
     display: none;
   }
 
@@ -153,10 +164,6 @@ header {
 /* @media (min-width: 1536px) {} */
 
 @media (prefers-color-scheme: dark) {
-  .header__bars span {
-    background: var(--color-black);
-  }
-
   .header__link:hover {
     color: var(--color-black);
   }
