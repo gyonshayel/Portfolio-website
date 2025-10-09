@@ -19,6 +19,15 @@ const mobileNav = () => {
     }
   });
 
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768 && isMobileNavOpen) {
+      isMobileNavOpen = false;
+      headerBtn.classList.remove("active");
+      mobileNav.style.display = "none";
+      document.body.style.overflowY = "auto";
+    }
+  });
+
   mobileLinks.forEach((link) => {
     link.addEventListener("click", () => {
       isMobileNavOpen = false;

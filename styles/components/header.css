@@ -1,6 +1,6 @@
 header {
   background-color: var(
-    --color-top
+    --color-nav-bg
   ); /* use js to add whatever background color of header content to this */
 }
 
@@ -10,7 +10,6 @@ header {
   align-items: center;
   padding-top: 0.55rem;
   padding-bottom: 0.55rem;
-  background-color: var(--color-top);
   border-radius: 0 0 10px 10px;
   position: relative;
   z-index: 9999;
@@ -25,7 +24,7 @@ header {
   font-family: var(--font-family-heading);
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--color-heading);
+  color: var(--color-nav-item);
   text-decoration: none;
   cursor: pointer;
 }
@@ -41,7 +40,7 @@ header {
   width: 14px;
   height: 2px;
   border-radius: 2px;
-  background: var(--color-general);
+  background: var(--color-white);
   transition: all 0.3s ease;
 }
 
@@ -117,13 +116,13 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    color: var(--color-text);
+    color: var(--color-nav-item);
     letter-spacing: 0.0625em;
     transition: color 0.3s;
   }
 
   .header__link:hover {
-    color: var(--color-heading);
+    color: var(--color-white);
   }
 
   .header__bars {
@@ -143,3 +142,13 @@ header {
 
 /* 2xl */
 /* @media (min-width: 1536px) {} */
+
+@media (prefers-color-scheme: dark) {
+  .header__bars span {
+    background: var(--color-black);
+  }
+
+  .header__link:hover {
+    color: var(--color-black);
+  }
+}
