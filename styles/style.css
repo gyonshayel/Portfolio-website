@@ -41,7 +41,7 @@
   --color-text: hsl(0, 0%, 30%);
 
   /* fonts */
-  --font-family-heading: "Lora", serif;
+  --font-family-heading: "Open Sans", sans-serif;
   --font-family-text: "source-sans-pro", sans-serif;
 
   /* height of the header */

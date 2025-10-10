@@ -19,6 +19,7 @@
   color: var(--color-heading);
   font-family: var(--font-family-heading);
   font-size: var(--size-base);
+  font-weight: 500;
   line-height: 0.9;
 }
 
@@ -31,6 +32,7 @@
   text-transform: uppercase;
   font-family: var(--font-family-heading);
   font-size: var(--size-5xl);
+  font-weight: 600;
   letter-spacing: -0.05em;
   line-height: 0.9;
 }
@@ -81,6 +83,10 @@
 @media (min-width: 768px) {
   .hero {
     margin-top: calc(var(--header-height) + 2rem);
+  }
+
+  .hero__title {
+    font-weight: 700;
   }
 }
 

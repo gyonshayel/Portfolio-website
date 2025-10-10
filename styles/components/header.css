@@ -26,7 +26,8 @@ header {
 .header-logo__link {
   font-family: var(--font-family-heading);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
+  text-transform: uppercase;
   color: var(--color-nav-item);
   text-decoration: none;
   cursor: pointer;
