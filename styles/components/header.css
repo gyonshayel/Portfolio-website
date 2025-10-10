@@ -30,6 +30,14 @@ header {
   color: var(--color-nav-item);
   text-decoration: none;
   cursor: pointer;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-logo__link.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .header__bars {
@@ -46,14 +54,14 @@ header {
   width: 14px;
   height: 2px;
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: opacity 0.1s, transform 0.3s ease;
   background-color: var(--color-nav-item);
 }
 
 /* Hamburger menu active */
 .header__bars.active span:nth-child(1) {
-  transform-origin: right center;
-  transform: rotate(-45deg) translate(-1px, -2.25px);
+  transform-origin: center center;
+  transform: translateY(4px) rotate(-45deg);
 }
 
 .header__bars.active span:nth-child(2) {
@@ -61,8 +69,8 @@ header {
 }
 
 .header__bars.active span:nth-child(3) {
-  transform-origin: right center;
-  transform: rotate(45deg) translate(-0.75px, 2.125px);
+  transform-origin: center center;
+  transform: translateY(-4px) rotate(45deg);
 }
 
 /* xs */
@@ -94,12 +102,22 @@ header {
 
   .header__bars {
     height: calc(var(--header-height) - 0.6rem);
-    gap: 5px;
+    gap: 3px;
   }
 
   .header__bars span {
-    width: 25px;
+    width: 21px;
     height: 3px;
+  }
+
+  .header__bars.active span:nth-child(1) {
+    transform-origin: center center;
+    transform: translateY(6px) rotate(-45deg);
+  }
+
+  .header__bars.active span:nth-child(3) {
+    transform-origin: center center;
+    transform: translateY(-6px) rotate(45deg);
   }
 }
 

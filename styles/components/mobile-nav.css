@@ -50,13 +50,11 @@
   from {
     transform: translateY(-100%);
     background-color: var(--color-nav-bg);
-    /* opacity: 0; */
     display: flex;
   }
   to {
     transform: translateY(0%);
     background-color: var(--color-general);
-    /* opacity: 1; */
   }
 }
 
@@ -64,30 +62,10 @@
   from {
     transform: translateY(0%);
     background-color: var(--color-general);
-    /* opacity: 1; */
   }
   to {
     transform: translateY(-100%);
     background-color: var(--color-nav-bg);
-    /* opacity: 0; */
     display: none;
   }
 }
-
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-/* @media (min-width: 768px) {} */
-
-/* lg */
-/* @media (min-width: 1024px) {} */
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
