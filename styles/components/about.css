@@ -11,14 +11,14 @@
 }
 
 .about__title {
-  font-size: var(--size-2xl);
+  font-size: 1.75rem;
   font-family: var(--font-family-heading);
   color: var(--color-heading);
 }
 
 .about__description {
   max-width: 60ch;
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
   color: var(--color-text);
 }
 
@@ -32,7 +32,7 @@
 }
 
 .about__technologies-title {
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
   font-family: var(--font-family-heading);
   color: var(--color-heading);
   margin-bottom: 1em;
@@ -73,24 +73,16 @@
   .about__title {
     font-size: var(--size-3xl);
   }
-
-  .about__description {
-    font-size: var(--size-base);
-  }
-
-  .about__img-wrapper {
-    width: 28.6875rem;
-  }
-
-  .about__technologies-title {
-    font-size: var(--size-base);
-  }
 }
 
 /* sm */
 @media (min-width: 640px) {
   .about {
     align-items: center;
+  }
+
+  .about__img-wrapper {
+    width: 29.819375rem;
   }
 }
 
