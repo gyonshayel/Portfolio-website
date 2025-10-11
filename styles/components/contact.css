@@ -8,19 +8,21 @@
 }
 
 .contact__title {
-  font-size: var(--size-2xl);
+  font-size: 1.75rem;
   font-family: var(--font-family-heading);
   color: var(--color-heading);
 }
 
 .contact__description {
-  font-size: var(--size-sm);
+  text-align: center;
+  text-justify: inter-word;
+  font-size: var(--size-base);
   color: var(--color-text);
   max-width: 60ch;
 }
 
 .contact__btn {
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
   text-transform: uppercase;
 }
 
@@ -32,14 +34,6 @@
 
   .contact__title {
     font-size: var(--size-3xl);
-  }
-
-  .contact__description {
-    font-size: var(--size-base);
-  }
-
-  .contact__btn {
-    font-size: var(--size-base);
   }
 }
 
