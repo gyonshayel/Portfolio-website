@@ -10,7 +10,7 @@ header {
   padding-bottom: 0.55rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-radius: 0 0 10px 10px;
+  margin-bottom: 0.5rem;
   position: relative;
   z-index: 9999;
 }
