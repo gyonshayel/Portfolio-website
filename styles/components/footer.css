@@ -24,7 +24,6 @@
 
 .footer__nav-link {
   text-decoration: none;
-  font-size: var(--size-base);
   color: var(--color-text);
   letter-spacing: 0.0625em;
   transition: color 0.3s;
@@ -55,7 +54,7 @@
 .footer__note {
   grid-area: footer;
   text-align: center;
-  font-size: var(--size-xs);
+  font-size: var(--size-sm);
   color: var(--color-text);
   margin-bottom: 0.5em;
 }
@@ -110,7 +109,7 @@
   }
 
   .footer__note {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
   }
 }
 
@@ -121,7 +120,7 @@
   }
 
   .footer__note {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 }
 
