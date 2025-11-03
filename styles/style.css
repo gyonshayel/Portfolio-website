@@ -62,6 +62,10 @@ body {
   background-color: var(--color-middle);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 img,
 picture,
 video,
