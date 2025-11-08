@@ -24,10 +24,6 @@
 }
 
 .hero__title {
-  /* background-image: var(--color-primary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent; */
   color: var(--color-heading);
   text-transform: uppercase;
   font-family: var(--font-family-heading);

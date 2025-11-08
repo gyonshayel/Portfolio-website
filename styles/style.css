@@ -1,14 +1,6 @@
 :root {
   /* colors */
-  --color-primary: linear-gradient(
-    to right,
-    hsl(118, 50%, 12%),
-    hsl(90, 27%, 39%),
-    hsl(72, 76%, 57%),
-    hsl(69, 38%, 26%),
-    hsl(79, 32%, 45%)
-  );
-  --color-secondary: hsl(72, 76%, 57%);
+  --color-primary: hsl(72, 76%, 57%);
   --color-white: hsl(0, 0%, 100%);
   --color-black: hsl(0, 0%, 0%);
 

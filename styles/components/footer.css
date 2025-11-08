@@ -86,7 +86,7 @@ footer {
 
   .footer__connect {
     /* flex-direction: column; */
-
+    justify-content: flex-end;
     row-gap: 0.5em;
   }
 
@@ -97,6 +97,7 @@ footer {
   } */
 
   .footer__note {
+    text-align: start;
     margin: 0;
   }
 }

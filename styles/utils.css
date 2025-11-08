@@ -21,7 +21,7 @@
   font-weight: 500;
   text-decoration: none;
   letter-spacing: -0.05em;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   color: hsl(0, 0%, 30%);
   padding: 0.5em 1em;
   transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
